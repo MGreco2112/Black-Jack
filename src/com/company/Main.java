@@ -5,9 +5,12 @@ import card.*;
 public class Main {
 
     public static void main(String[] args) {
-        Deck deck = new StandardDeck();
+        Deck deck = new CheatersDeck();
 
         deck.shuffle();
-        deck.printDeck();
+
+        for (int i = 0; i < 5; i++) {
+            System.out.println(deck.deal());
+        }
     }
 }
