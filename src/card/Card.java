@@ -9,6 +9,8 @@ public class Card {
         this.VALUE = value;
     }
 
-
+    public String toString() {
+        return VALUE + " of " + SUIT;
+    }
 
 }
