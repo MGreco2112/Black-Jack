@@ -25,7 +25,15 @@ public class StandardDeck implements Deck{
 
     @Override
     public Card deal() {
-        return CARDS.remove(CARDS.size() - 1);
+        Card dealtCard = null;
+
+        if (CARDS.size() > 0) {
+            dealtCard = CARDS.remove(CARDS.size() - 1);
+        } else {
+            System.out.println("The deck is empty");
+        }
+
+        return dealtCard;
     }
 
     public void printDeck() {

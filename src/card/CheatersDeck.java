@@ -25,12 +25,33 @@ public class CheatersDeck implements Deck{
 
     @Override
     public Card deal() {
-        System.out.println("What Card would you like?\nEnter a Suit (1 - 4): ");
-        System.out.println(Arrays.toString(SUITS));
-        int suitIndex = Integer.parseInt(scanner.nextLine()) -1 ;
-        System.out.println(Arrays.toString(VALUES));
-        System.out.println("Of which value (1 - 13)?");
-        int valueIndex = Integer.parseInt(scanner.nextLine()) - 1;
+        int suitIndex = -1;
+        int valueIndex = -1;
+
+        do {
+            System.out.println("What Card would you like?\nEnter a Suit (1 - 4): ");
+            System.out.println(Arrays.toString(SUITS));
+
+            try {
+                suitIndex = Integer.parseInt(scanner.nextLine()) - 1;
+            } catch (Exception e) {
+                System.out.println("Invalid entry, try again");
+                suitIndex = -1;
+            }
+
+        } while (suitIndex < 0 || suitIndex > SUITS.length - 1);
+
+        do {
+            System.out.println(Arrays.toString(VALUES));
+            System.out.println("Of which value (1 - 13)?");
+
+            try {
+                valueIndex = Integer.parseInt(scanner.nextLine()) - 1;
+            } catch (Exception e) {
+                System.out.println("Invalid entry, try again");
+                valueIndex = -1;
+            }
+        } while (valueIndex < 0 || valueIndex > VALUES.length - 1);
 
 
         return new Card(SUITS[suitIndex], VALUES[valueIndex]);
