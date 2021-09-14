@@ -7,7 +7,6 @@ import java.util.Scanner;
 
 public class CheatersDeck implements Deck{
     private final Scanner scanner = new Scanner(System.in);
-    private final List<Card> CARDS = new ArrayList<>();
     public final String[] SUITS = new String[] {"Clubs", "Hearts", "Diamonds", "Spades"};
     public final String[] VALUES = new String[] {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen",
             "King"};
