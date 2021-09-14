@@ -36,6 +36,10 @@ public class StandardDeck implements Deck{
         return dealtCard;
     }
 
+    public int getCARDSSize() {
+        return CARDS.size();
+    }
+
     public void printDeck() {
         System.out.println(CARDS);
     }
