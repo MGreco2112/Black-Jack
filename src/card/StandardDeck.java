@@ -23,7 +23,7 @@ public class StandardDeck implements Deck{
     }
 
     @Override
-    public String deal() {
+    public Card deal() {
         Card dealtCard = null;
 
         if (CARDS.size() > 0) {
@@ -32,7 +32,7 @@ public class StandardDeck implements Deck{
             System.out.println("The deck is empty");
         }
 
-        return dealtCard.display();
+        return dealtCard;
     }
 
     public int getCARDSSize() {

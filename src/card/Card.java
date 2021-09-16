@@ -25,5 +25,9 @@ public class Card {
         return value + " of " + SUIT;
     }
 
+    public String toString() {
+        return display();
+    }
+
 
 }

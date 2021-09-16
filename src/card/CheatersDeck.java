@@ -22,7 +22,7 @@ public class CheatersDeck implements Deck{
     }
 
     @Override
-    public String deal() {
+    public Card deal() {
         int suitIndex = -1;
         int valueIndex = -1;
 
@@ -52,6 +52,6 @@ public class CheatersDeck implements Deck{
         } while (valueIndex < 0 || valueIndex > VALUES.length - 1);
 
 
-        return new Card(SUITS[suitIndex], VALUES[valueIndex]).display();
+        return new Card(SUITS[suitIndex], VALUES[valueIndex]);
     }
 }
