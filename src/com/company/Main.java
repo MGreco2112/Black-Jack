@@ -18,10 +18,13 @@ public class Main {
 
 
     public static void main(String[] args) {
-        Deck deck = new StandardDeck();
-        Scanner scanner = new Scanner(System.in);
+        Deck deck = new CheatersDeck();
 
         deck.shuffle();
+
+        for (int drawnCards = 0; drawnCards < 5; drawnCards++) {
+            System.out.println(deck.deal());
+        }
 
 //        while (((StandardDeck) deck).getCARDSSize() > 0) {
 //            int dealtCards = -1;
