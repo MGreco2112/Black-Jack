@@ -8,8 +8,7 @@ import java.util.Scanner;
 public class CheatersDeck implements Deck{
     private final Scanner scanner = new Scanner(System.in);
     public final String[] SUITS = new String[] {"Clubs", "Hearts", "Diamonds", "Spades"};
-    public final String[] VALUES = new String[] {"Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen",
-            "King"};
+    public final int[] VALUES = new int[] {1, 2, 3,4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
 
 
     @Override
