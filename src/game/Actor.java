@@ -8,6 +8,6 @@ public interface Actor {
 
     String getBet();
 
-    void getActon();
+    void getActon(int choice);
 
 }

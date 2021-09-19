@@ -25,7 +25,21 @@ public class Dealer implements Actor{
     }
 
     @Override
-    public void getActon() {
+    public void getActon(int choice) {
+        switch (choice) {
+            case 1 -> takeBet();
+
+            case 2 -> hitPlayer();
+
+            default -> System.out.println("Invalid choice");
+        }
+    }
+
+    public void takeBet() {
+
+    }
+
+    public void hitPlayer() {
 
     }
 }
