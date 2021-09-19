@@ -7,6 +7,7 @@ import java.util.Scanner;
 public class Main {
 
     /*
+    Will pair down to match Cliff's Code A-Long Demonstration
     Plan of Attack:
     Classes
         -Card (int Value, String suit, boolean isFaceUp)
