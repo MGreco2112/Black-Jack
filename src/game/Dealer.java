@@ -20,7 +20,7 @@ public class Dealer implements Actor{
     }
 
     @Override
-    public String getBet() {
+    public String getBet(int Wallet) {
         return "The Dealer cannot bet";
     }
 

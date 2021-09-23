@@ -6,7 +6,7 @@ public interface Actor {
 
     int getBalance();
 
-    String getBet();
+    String getBet(int Wallet);
 
     void getActon(int choice);
 
